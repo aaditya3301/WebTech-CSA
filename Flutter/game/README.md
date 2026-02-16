@@ -1,4 +1,6 @@
-# my_web_app
+# game
+
+A Flappy Bird game built with Flutter.
 
 A new Flutter project.
 
