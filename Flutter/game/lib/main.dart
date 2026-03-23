@@ -1,5 +1,4 @@
 import 'dart:async';
-import 'dart:math';
 import 'package:flutter/material.dart';
 
 void main() {
@@ -275,9 +274,11 @@ class _GameScreenState extends State<GameScreen> {
 }
 
 class MyBird extends StatelessWidget {
+  const MyBird({super.key});
+
   @override
   Widget build(BuildContext context) {
-    return Container(
+    return SizedBox(
       width: 60,
       height: 60,
       child: Image.asset('assets/bird.png', errorBuilder: (context, error, stack) {
@@ -306,7 +307,7 @@ class MyBarrier extends StatelessWidget {
   final double barrierX;
   final bool isThisBottomBarrier;
 
-  MyBarrier({
+  const MyBarrier({super.key, 
     required this.barrierHeight,
     required this.barrierWidth,
     required this.barrierX,
