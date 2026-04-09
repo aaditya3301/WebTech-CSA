@@ -8,7 +8,7 @@ class MovieApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(
+    return MaterialApp( 
       title: 'Movie Browser',
       theme: ThemeData(
         colorScheme: ColorScheme.fromSeed(
